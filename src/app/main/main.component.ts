@@ -34,10 +34,11 @@ export class MainComponent implements OnInit {
   showWidget(widget){
     this.itemFound = widget
   }
-/*
   delete(widget){
-    this.myService.deleteData()
+    this.myService.deleteData(widget)
       .subscribe(res=>{
+        console.log(res);
+        this.ngOnInit();
       })
-  }?*/
+  }
 }

@@ -29,6 +29,10 @@ export class WidgetListService {
   }
 
   changeData(data){
-   return data.id?this.updateData(data):this.postData(data)
+   return data.id?this.updateData(data):this.postData(data);
+  }
+
+  deleteData(data){
+    return this.http.delete(Base_URL+data.id,header);
   }
 }
